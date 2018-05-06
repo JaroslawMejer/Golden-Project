@@ -25,6 +25,7 @@ body {
   padding: 0;
   margin-top: 2.5em;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .desc-of-sections {
@@ -252,7 +253,6 @@ body {
 /* SERVICES */
 .services {
   position: relative;
-  margin-bottom: 5em;
 }
 
 .services .row .col-4 {
@@ -287,6 +287,63 @@ body {
   opacity: 0.5;
 }
 
+/* END OF SERVICES */
+/* PORTFOLIO */
+.portfolio {
+  position: relative;
+}
+
+.portfolio .portfolio-row {
+  padding-bottom: 2.5em;
+  position: relative;
+}
+
+.portfolio .portfolio-row .portfolio-cols {
+  padding: 0 25px;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-row .portfolio-cols img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease-in;
+}
+
+.portfolio .portfolio-row .portfolio-cols img:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.64);
+}
+
+.portfolio .portfolio-row .portfolio-cols img:hover .portoflio-layer {
+  opacity: 0.7;
+}
+
+.portfolio .portfolio-row .portfolio-cols .portfolio-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.portfolio .portfolio-row .portfolio-cols .portfolio-desc {
+  font-size: 0.9em;
+  font-family: "myriad-pro";
+  font-style: italic;
+  text-align: center;
+}
+
+.portfolio .portfolio-row .portfolio-cols .img-layer {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio .portfolio-row .portfolio-cols .img-layer:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.64);
+}
+
+/* END OF PORTOFLIO */
 /* RWD */
 @media (max-width: 725px) {
   body {
