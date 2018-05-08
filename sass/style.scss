@@ -11,7 +11,12 @@ body{
 	font-size: 16px;
 }
 
-
+.bg-container{
+	width: 100%;
+}
+.bg-color-gray{
+	background-color: rgb(247,247,247);
+}
 .container{
 	width: 100%;
 	max-width: 940px;
@@ -56,6 +61,7 @@ $golden-color: #fed136;
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+.col-offset-4 {margin-left: 33.33%;}
 
 [class*="col-"] {
     float: left;
@@ -94,7 +100,6 @@ $golden-color: #fed136;
 .header-bg{
 	width:100%;
 	height:auto;
-	max-width: 1400px;
 	background-image: url(https://public.adobecc.com/files/1EPWQMQAWCKDEQTBUCJHVK1154LFFF);
 	background-size: cover;
   	background-position: center;
@@ -214,6 +219,7 @@ $golden-color: #fed136;
 .services{
 	position: relative;
 	.row{
+		margin-bottom: 5em;
 		.col-4{
 			margin: 0;
 			padding: 0 15px;
@@ -291,6 +297,28 @@ $golden-color: #fed136;
 }
 
 /* END OF PORTOFLIO */
+
+/* ABOUT US */
+.about-us-title{
+	font-size: 1.1em;
+	text-align: right;
+	font-weight: bold;
+}
+.about-us-desc{
+	font-size: 0.9em;
+	text-align: right;
+	font-family: 'Roboto Slab', serif;
+	color: #777777;
+}
+.col-image-container{
+	display: flex;
+	justify-content: center;
+	.about-us-image{
+	}
+}
+
+
+
 
 
 
