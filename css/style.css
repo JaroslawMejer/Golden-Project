@@ -41,6 +41,7 @@ body {
   text-align: center;
   color: #777777;
   margin-bottom: 4em;
+  font-style: italic;
 }
 
 /* GLOBAL STYLES ENDS */
@@ -169,6 +170,7 @@ body {
 }
 
 .header .header-nav ul li .header-nav-links {
+  text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
   text-transform: uppercase;
@@ -451,6 +453,86 @@ body {
 }
 
 /* END OF ABOUT US */
+/* OUR TEAM */
+.team .row .team-desc {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  color: #777777;
+  margin-top: 2.5em;
+  margin-bottom: 5em;
+}
+
+.team .row .col-4 .team-photo-holder {
+  width: 220px;
+  max-width: 100%;
+  height: 220px;
+  max-height: 100%;
+  border-radius: 50%;
+  background-color: #111111;
+}
+
+.team .row .col-4 .team-name {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.team .row .col-4 .team-job {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.9em;
+  color: #777777;
+}
+
+.team .row .col-4 .team-social-container {
+  margin: 10px 0;
+  width: 60%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.team .row .col-4 .team-social-container .icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  background-color: transparent;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.team .row .col-4 .team-social-container .icon-btn:hover {
+  color: white;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.team .row .col-4 .team-social-container .twitter:hover {
+  background-color: #00aced;
+}
+
+.team .row .col-4 .team-social-container .facebook:hover {
+  background-color: #3b5998;
+}
+
+.team .row .col-4 .team-social-container .pinterest:hover {
+  background-color: #cb2028;
+}
+
+.team .row .team-col {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* END OF OUR TEAM */
 /* RWD */
 @media (max-width: 725px) {
   body {
@@ -480,6 +562,11 @@ body {
   .header .header-nav #header-nav-button:checked + ul {
     max-height: 200px;
   }
+  .header-slogan-container h1 {
+    font-size: 5em;
+    padding: 0 10px;
+    text-align: center;
+  }
   /* END OF HEADER RWD */
   /* SERVICES RWD */
   .services .row .col-4 {
@@ -488,6 +575,12 @@ body {
   .services .row .col-4:last-child {
     margin-left: 25%;
   }
+  .services .row .col-4 .service-title {
+    font-size: 1.4em;
+  }
+  .services .row .col-4 .service-desc {
+    font-size: 1.2em;
+  }
   /* END OF SERVICES RWD */
   /* PORTFOLIO RWD */
   .portfolio .portfolio-row .portfolio-cols {
@@ -495,6 +588,12 @@ body {
   }
   .portfolio .portfolio-row .portfolio-cols:last-child {
     margin-left: 25%;
+  }
+  .portfolio .portfolio-row .portfolio-cols .portfolio-title {
+    font-size: 1.4em;
+  }
+  .portfolio .portfolio-row .portfolio-cols .portfolio-desc {
+    font-size: 1.2em;
   }
   /*END OF PORTFOLIO RWD */
   /* ABOUT-US RWD */
@@ -515,9 +614,11 @@ body {
   }
   .about-us .row .col-4 .about-us-title {
     padding: 5px;
+    font-size: 1.4em;
   }
   .about-us .row .col-4 .about-us-desc {
     padding: 5px;
+    font-size: 1.2em;
   }
   .about-us .row .col-to-disable-in-RWD {
     display: none;
@@ -526,5 +627,31 @@ body {
     margin-left: 0;
   }
   /* END OF ABOUT-US RWD */
+  /* OUR TEAM */
+  .team .row .team-col {
+    width: 100%;
+  }
+  .team .row .team-col .team-name {
+    font-size: 1.4em;
+  }
+  .team .row .team-col .team-job {
+    font-size: 1.2em;
+  }
+  .team .row .team-col .team-social-container .icon-btn {
+    color: white;
+    border: 3px solid transparent;
+  }
+  .team .row .team-col .team-social-container .twitter {
+    background-color: #00aced;
+  }
+  .team .row .team-col .team-social-container .facebook {
+    background-color: #3b5998;
+  }
+  .team .row .team-col .team-social-container .pinterest {
+    background-color: #cb2028;
+  }
+  .team .row .team-desc {
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
