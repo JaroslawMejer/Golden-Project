@@ -94,7 +94,7 @@ body {
   width: 100%;
 }
 
-.col-offset-4 {
+.offset-4 {
   margin-left: 33.33%;
 }
 
@@ -360,31 +360,103 @@ body {
 
 /* END OF PORTOFLIO */
 /* ABOUT US */
-.about-us-title {
+.about-us .row .line-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 0;
+}
+
+.about-us .row .line-container .vertical-line {
+  width: 5px;
+  height: 5em;
+  background-color: #f1f1f1;
+}
+
+.about-us .row .line-container .about-us-circle {
+  width: 11.438em;
+  height: 11.438em;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.about-us .row .line-container .about-us-circle .about-us-inner-circle {
+  width: 93%;
+  height: 93%;
+  background-color: #fed136;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.about-us .row .line-container .about-us-circle .about-us-inner-circle .inner-circle-text {
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 2px 5px #969696;
+}
+
+.about-us .row .col-4, .about-us .row .col-offset-4 {
+  padding: 0;
+}
+
+.about-us .row .col-4 .about-us-title, .about-us .row .col-offset-4 .about-us-title {
   font-size: 1.1em;
   text-align: right;
   font-weight: bold;
 }
 
-.about-us-desc {
+.about-us .row .col-4 .about-us-desc, .about-us .row .col-offset-4 .about-us-desc {
   font-size: 0.9em;
   text-align: right;
   font-family: 'Roboto Slab', serif;
   color: #777777;
 }
 
-.col-image-container {
+.about-us .row .col-4 .about-us-txtalign-left, .about-us .row .col-offset-4 .about-us-txtalign-left {
+  text-align: left;
+}
+
+.about-us .row .col-image-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  padding: 0;
 }
 
+.about-us .row .col-image-container .about-us-image {
+  transition: 0.5s;
+}
+
+.about-us .row .col-image-container .about-us-image:hover {
+  transform: scale(1.05);
+}
+
+.about-us #last-about-us-row {
+  padding-bottom: 5em;
+}
+
+/* END OF ABOUT US */
 /* RWD */
 @media (max-width: 725px) {
   body {
     font-size: 13px;
   }
+  /* HEADER RWD */
   .header .logo {
     width: 50%;
   }
@@ -408,11 +480,51 @@ body {
   .header .header-nav #header-nav-button:checked + ul {
     max-height: 200px;
   }
+  /* END OF HEADER RWD */
+  /* SERVICES RWD */
   .services .row .col-4 {
     width: 50%;
   }
   .services .row .col-4:last-child {
     margin-left: 25%;
   }
+  /* END OF SERVICES RWD */
+  /* PORTFOLIO RWD */
+  .portfolio .portfolio-row .portfolio-cols {
+    width: 50%;
+  }
+  .portfolio .portfolio-row .portfolio-cols:last-child {
+    margin-left: 25%;
+  }
+  /*END OF PORTFOLIO RWD */
+  /* ABOUT-US RWD */
+  .about-us .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .about-us .row .line-container .left-rotate {
+    transform: rotate(45deg);
+  }
+  .about-us .row .line-container .right-rotate {
+    transform: rotate(-45deg);
+  }
+  .about-us .row .col-4 {
+    width: 50%;
+  }
+  .about-us .row .col-4 .about-us-title {
+    padding: 5px;
+  }
+  .about-us .row .col-4 .about-us-desc {
+    padding: 5px;
+  }
+  .about-us .row .col-to-disable-in-RWD {
+    display: none;
+  }
+  .about-us .row .offset-4 {
+    margin-left: 0;
+  }
+  /* END OF ABOUT-US RWD */
 }
 /*# sourceMappingURL=style.css.map */
