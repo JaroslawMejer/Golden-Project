@@ -17,6 +17,7 @@ body{
 .bg-color-gray{
 	background-color: rgb(247,247,247);
 }
+
 .container{
 	width: 100%;
 	max-width: 940px;
@@ -454,7 +455,107 @@ $golden-color: #fed136;
 
 /* END OF OUR TEAM */
 
+/* LOGOS */
 
+.logos{
+	padding: 2.5em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	.col-3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img{
+			opacity: 0.7;
+			transition: all 0.5s;
+			&:hover{
+				opacity: 1;
+				transform: scale(1.1);
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/* CONTACT */
+.white-head{
+	color: white;
+
+}
+.contact-bg-map{
+	background-color: rgb(34,34,34);
+	background-image: url(https://public.adobecc.com/files/1E5NRQRKK4RK34QG1FXPD030BAUFFF);
+	background-size: cover;
+  	background-position: center;
+}
+.contact{
+	.col-12{
+		display: flex;
+		justify-content: center;
+		button{
+			margin-top: 3em;
+			margin-bottom: 3em;
+			font-size: 1em;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: white;
+			background-color: $golden-color;
+			border-radius: 3px;
+			border: none;
+			padding: 20px 50px;
+			font-family: 'Montserrat', sans-serif;
+			transition: all 0.5s ease-in;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.2);
+				color: $golden-color;
+				background-color: transparent;
+			}
+		}
+	}
+	.col-6{
+		display: flex;
+		justify-content: center;
+		form{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			input, textarea{
+				width: 100%;
+				max-width: 28.5625em;
+				margin: 15px auto;
+				background-color: white;
+				border:0;
+				border-radius: 5px;
+				padding: 20px 0;
+				padding-left: 25px;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+
+				&::placeholder{
+					font-weight: bold;
+					color: #bbbbbb;
+				}
+			}
+			.input-message{
+				padding-top: 20px;
+				padding-left: 25px;
+				padding-bottom: 13.2em;
+				text-transform: uppercase;
+				resize: none;
+				&::placeholder{
+					font-weight: bold;
+					color: #bbbbbb;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
 
 
 
@@ -619,6 +720,43 @@ $golden-color: #fed136;
 			}
 			.team-desc{
 				font-size: 1.2em;
+			}
+		}
+	}
+	/* TEAM RWD ENDS */
+
+	/* LOGOS RWD */
+	.logos{
+		.col-3{
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			img{
+
+			}
+		}
+	}
+
+	/* CONTACT */
+	.contact{
+		.col-6{
+			width: 100%;
+			.textarea-form{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				input{
+					width: 100%;
+					display: block;
+				}
+			}
+			.input-form{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				input{
+					margin: 20px auto;
+				}
 			}
 		}
 	}
