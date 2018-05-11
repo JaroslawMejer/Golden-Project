@@ -296,12 +296,12 @@ body {
 
 .services .row .col-4 img {
   transition: all 0.5s ease-in;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .services .row .col-4 img:hover {
-  transform: scale(0.9);
-  opacity: 0.5;
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 /* END OF SERVICES */
@@ -317,7 +317,7 @@ body {
 
 .portfolio .portfolio-row .portfolio-cols {
   padding: 0 25px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .portfolio .portfolio-row .portfolio-cols img {
@@ -636,21 +636,30 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: 0.5s all;
+}
+
+.contact .col-6 form input:focus, .contact .col-6 form textarea:focus {
+  border: 3px solid #fed136;
+  outline: none;
 }
 
 .contact .col-6 form input::-webkit-input-placeholder, .contact .col-6 form textarea::-webkit-input-placeholder {
   font-weight: bold;
   color: #bbbbbb;
+  box-shadow: none;
 }
 
 .contact .col-6 form input:-ms-input-placeholder, .contact .col-6 form textarea:-ms-input-placeholder {
   font-weight: bold;
   color: #bbbbbb;
+  box-shadow: none;
 }
 
 .contact .col-6 form input::placeholder, .contact .col-6 form textarea::placeholder {
   font-weight: bold;
   color: #bbbbbb;
+  box-shadow: none;
 }
 
 .contact .col-6 form .input-message {
@@ -679,6 +688,65 @@ body {
   font-size: 1.2em;
 }
 
+/* END OF CONTACT */
+/* FOOTER */
+.footer-col {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.footer-col p {
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 31px;
+}
+
+.footer-col .team-social-container {
+  margin: 10px 0;
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-col .team-social-container .icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: black;
+  font-size: 20px;
+  transition: all 0.5s;
+  color: white;
+}
+
+.footer-col .team-social-container .icon-btn:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.footer-col .team-social-container .twitter:hover {
+  background-color: #00aced;
+}
+
+.footer-col .team-social-container .facebook:hover {
+  background-color: #3b5998;
+}
+
+.footer-col .team-social-container .pinterest:hover {
+  background-color: #cb2028;
+}
+
+.footer-col .team-social-container .google:hover {
+  background-color: #da2713;
+}
+
+/* END OF FOOTER */
 /* RWD */
 @media (max-width: 725px) {
   body {
@@ -809,6 +877,9 @@ body {
         justify-content: center;
   }
   /* CONTACT */
+  .contact-bg-map {
+    background-position: right center;
+  }
   .contact .col-6 {
     width: 100%;
   }
@@ -833,5 +904,14 @@ body {
   .contact .col-6 .input-form input {
     margin: 20px auto;
   }
+  /* END OF CONTACT */
+  /* FOOTER */
+  .footer-col {
+    width: 100%;
+  }
+  .footer-col p {
+    line-height: 1em;
+  }
+  /* END OF FOOTER */
 }
 /*# sourceMappingURL=style.css.map */

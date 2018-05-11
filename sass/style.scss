@@ -240,10 +240,10 @@ $golden-color: #fed136;
 			}
 			img{
 				transition: all 0.5s ease-in;
-				opacity: 1;
+				opacity: 0.5;
 				&:hover{
-					transform:scale(0.9);
-					opacity: 0.5;
+					transform:scale(1.1);
+					opacity: 1;
 				}
 			}
 		}
@@ -261,7 +261,7 @@ $golden-color: #fed136;
 		position: relative;
 		.portfolio-cols{
 			padding: 0 25px;
-			overflow: hidden;
+			overflow: visible;
 			img{
 				width: 100%;
 				height: auto;
@@ -535,10 +535,16 @@ $golden-color: #fed136;
 				text-overflow: ellipsis;
 				white-space: nowrap;
 				overflow: hidden;
-
+				transition: 0.5s all;
+				&:focus{
+					border: 3px solid $golden-color;
+					outline: none;
+					
+				}
 				&::placeholder{
 					font-weight: bold;
 					color: #bbbbbb;
+					box-shadow: none;
 				}
 			}
 			.input-message{
@@ -556,16 +562,62 @@ $golden-color: #fed136;
 		}
 	}
 }
+/* END OF CONTACT */
 
+/* FOOTER */
 
+.footer-col{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	p{
+		font-size: 0.9em;
+		text-align: center;
+		line-height: 31px;
+	}
+	.team-social-container{
+				margin: 10px 0;
+				width: 80%;
+				display: flex;
+				justify-content: space-around;
+				.icon-btn{
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					border: 0;
+					background-color: black;
+					font-size: 20px;
+					transition: all 0.5s;
+					color: white;
+					&:hover{
+						color: white;
+						cursor: pointer;
+					}
+				}
+				.twitter{
+					&:hover{
+						background-color: rgb(0,172,237);
+					}
+				}
+				.facebook{
+					&:hover{
+						background-color: rgb(59,89,152);
+					}
+				}
+				.pinterest{
+					&:hover{
+						background-color: rgb(203,32,40);
+					}
+				}
+				.google{
+					&:hover{
+						background-color: rgb(218,39,19);
+					}
+				}
+			}
+}
 
-
-
-
-
-
-
-
+/* END OF FOOTER */
 
 
 /* RWD */
@@ -738,6 +790,9 @@ $golden-color: #fed136;
 	}
 
 	/* CONTACT */
+	.contact-bg-map{
+		background-position: right center;
+	}
 	.contact{
 		.col-6{
 			width: 100%;
@@ -760,4 +815,15 @@ $golden-color: #fed136;
 			}
 		}
 	}
+	/* END OF CONTACT */
+
+	/* FOOTER */
+	.footer-col{
+		width: 100%;
+		p{
+			line-height: 1em;
+		}
+	}
+
+	/* END OF FOOTER */
 }
